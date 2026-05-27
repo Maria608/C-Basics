@@ -60,6 +60,21 @@ int main() {
     cin >> calcium;
     cout << endl;
     cout << "The values you entered are " <<"Name =" << halogen << " " << "Surname = " << hydrogen <<" "<< "Age = "<< calcium << endl;
+  
+    const double PI = 3.141592654;    
+    int radius;
+    cout << "The following program outputs the area of a circle." << endl;
+    cout << "Please enter the radius of the circle below" << endl;
+    cout << "Radius = ";
+    cin >> radius;
+    cout << endl;
+    cout << "The area of the circle is = " << PI * radius * radius << endl;
+
+    double number5;
+    cout << "The following program returns the decimal you enter to the next whole number integer" << endl;
+    cout << "Enter any decimal number below" << endl;
+    cin >> number5;
+    cout << static_cast<int>(number5);
     cout << "************************************************************************************"<< endl;
 
     // Escape sequences
