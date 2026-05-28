@@ -164,6 +164,20 @@ int main() {
     cout << endl;
     cout << "_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_" << endl;
 
+    cout << "************************************************************************************"<< endl;
+
+    double weight;
+    cout << "Program used to convert from kg to pounds: " << endl;  // Program used to convert from kg to pounds
+    cout << "Please enter your weight in kilograms below" << endl;
+    cin.clear();
+    cin.ignore(1000, '\n');
+    cout << "Weight in kilograms : " ;
+    cin >> weight;
+    cout << "kg" << endl;
+    cout << "Your weight in kilograms : " << setprecision(2) << fixed << showpoint << weight << " " << "kg" << endl;
+    double pounds = weight * 2.2;
+    cout << "Your weight in pounds : " << setprecision(2) << fixed << showpoint << pounds << " " << "ibs" << endl;
+
    return 0;
 
 }
