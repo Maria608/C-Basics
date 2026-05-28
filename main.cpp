@@ -142,6 +142,28 @@ int main() {
     cout << deci_5 << " = ";
     cout << static_cast<int>(deci_5) << " ";
 
+    cout << "************************************************************************************"<< endl;
+
+    // Movie ticket layout: output presentation:
+
+    cout << "_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_" << endl;
+    cout << endl;
+    cout << setw(55) << setfill(' ') << "Movie Tickets Sale and Donation to Charity" << endl;
+    cout << endl;
+    cout << "MOVIE NAME: ";
+    cout << setw(45) << right << setfill('.') << "Journey to Mars" << endl;
+    cout << "Number of tickets sold: ";
+    cout << setw(22) << right << setfill('.') << 2650 << endl;
+    cout << "Gross Amount ";
+    cout << setw(30) << right << setfill('.') << "$" << setprecision(2) << fixed << 9150.00 << endl;
+    cout << "Percentage of Gross Amount Donated:" << setprecision(2) << 10.00 << "%" << endl;
+    cout << "AmountDonated: ";
+    cout << setw(28) << right << setfill('.') << "$" << setprecision(2) << fixed << 915.00 << endl;
+    cout << "NetSale: ";
+    cout << setw(34) << right << setfill('.') << "$" << setprecision(2) << fixed << 8235.00 << endl;
+    cout << endl;
+    cout << "_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_" << endl;
+
    return 0;
 
 }
