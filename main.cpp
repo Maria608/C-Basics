@@ -178,6 +178,25 @@ int main() {
     double pounds = weight * 2.2;
     cout << "Your weight in pounds : " << setprecision(2) << fixed << showpoint << pounds << " " << "ibs" << endl;
 
+    cout << "************************************************************************************"<< endl;
+
+     int firstNum, secondNum;          // loops
+    cout << "Please enter two integers below(Note: The first integer must be less than the second integer:" << endl;
+    cout << "integer 1 - ";
+    cin >> firstNum;
+    cout << "integer 2 - ";
+    cin >> secondNum;
+    cout << "Program outputs all odd numbers between first integer and second integer: "<< endl;
+    while(firstNum <= secondNum)
+    {
+        if(firstNum % 2 != 0)
+        {
+            cout << firstNum << " ";
+        }
+        firstNum++;
+    }
+
+
    return 0;
 
 }
