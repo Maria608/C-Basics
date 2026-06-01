@@ -2,6 +2,8 @@
 #include <string>
 using namespace std;
 
+bool isVowel(char vowel)
+
 int main() {
   cout << " Hello there and welcome to my first c++ project!" << endl;
   // Variable Declarations(typically use lowercase letters):
@@ -196,7 +198,22 @@ int main() {
         firstNum++;
     }
 
+  cout << "A program using value-returning function, isVowel, that returns the value true if a given" // Exercise 1:
+       << "character is a vowel and otherwise returns false." << endl;
+
+    char vowelle;
+    cout << "Enter a vowel lowercase letter - ";
+    cin >> vowelle;
+    cout << isVowel(vowelle) << endl;
+    
 
    return 0;
 
 }
+
+    bool isVowel(char vowel)
+    {
+        return(vowel == 'i' || vowel == 'a' || vowel == 'e' || vowel == 'o' || vowel == 'u');
+
+    }
+
