@@ -8,7 +8,7 @@ Topics currently include:
 * Variables and data types
 * Input and output
 * Arithmetic operations
-* Conditional statements (if/else)
+* Conditional statements (if/else and switch)
 * Loops
 * Functions
 * Arrays
