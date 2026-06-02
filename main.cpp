@@ -274,8 +274,46 @@ int main() {
 
 
     cout << "************************************************************************************"<< endl;
-    
 
+        cout << "The program uses the bool variable isGuessed to control the loop. The bool variable\n"
+             << "isGuessed is initialized to false. It is set to true when the user guesses the correct\n"
+             << "number.\n" << endl;
+
+        int guess;
+        bool isGuessed = false;
+        int num;
+        srand(time(0));
+        num = rand() % 100;
+
+        cout << "Secret number = " << num << endl;
+
+        while(!isGuessed)
+        {
+            cout << "Please enter any number between 0 and less than 100 - ";
+            cin >> guess;
+            if(guess == num)
+            {
+                cout << "You have guessed the correct number!" << endl;
+                isGuessed = true;
+            }
+
+            else if(guess < num)
+            {
+                cout << "The number that you entered is lower than the number needed to be guessed!\n";
+                cout << "Guess again!" << endl;
+            }
+
+            else
+            {
+                cout << "The number that you guess is greater than the number needed to be guessed!\n";
+                cout << "Guess again!" << endl;
+            }
+
+          cout << "************************************************************************************"<< endl;
+
+
+        }
+        
    return 0;
 
 }
