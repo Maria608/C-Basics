@@ -205,6 +205,75 @@ int main() {
     cout << "Enter a vowel lowercase letter - ";
     cin >> vowelle;
     cout << isVowel(vowelle) << endl;
+
+    cout << "************************************************************************************"<< endl;
+
+     cout << "The following program reads the letter codes A to Z and prints the corresponding \n"
+         << "telephone digit. This program uses a sentinel-controlled while loop. To stop the \n"
+         << "program, the user is prompted for the sentinel, which is #." << endl;
+
+    char letter;
+
+    cout << "Enter any uppercase alphabet and the program shall give you the corresponding telephone digit its associated with - ";
+    cin >> letter;
+
+    while(letter != '#')
+    {
+        cout << "The letter that you entered is: " << letter << endl;
+        cout << "The corresponding digit is: ";
+
+        if(letter >= 'A' && letter <='Z')
+        switch(letter){
+            case 'A':
+            case 'B':
+            case 'C':
+                cout << "2";
+            break;
+            case 'D':
+            case 'E':
+            case 'F':
+                cout << "3";
+            break;
+            case 'G':
+            case 'H':
+            case 'I':
+                cout << "4";
+            break;
+            case 'J':
+            case 'K':
+            case 'L':
+                cout << "5";
+            break;
+            case 'M':
+            case 'N':
+            case 'O':
+                cout << "6";
+            break;
+            case 'P':
+            case 'Q':
+            case 'R':
+            case 'S':
+                cout << "7";
+            break;
+            case 'T':
+            case 'U':
+            case 'V':
+                cout << "8";
+            break;
+            case 'W':
+            case 'X':
+            case 'Y':
+            case 'Z':
+                cout << "9";
+        }
+        else
+            cout << "Invalid input";
+        cout << "Enter another uppercase letter, input # if you want to exit the program! - ";
+        cin >> letter;
+    }
+
+
+    cout << "************************************************************************************"<< endl;
     
 
    return 0;
