@@ -1,5 +1,9 @@
 #include <iostream>
 #include <string>
+#include <cmath>
+#include <iomanip>
+#include <ctime>
+
 using namespace std;
 
 bool isVowel(char vowel)
