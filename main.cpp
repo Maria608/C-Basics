@@ -311,8 +311,46 @@ int main() {
 
           cout << "************************************************************************************"<< endl;
 
+            // Fibonacci numbers:
+            cout << "A program that determines the nth Fibonacci number given the first two numbers" <<endl;
 
-        }
+            int first_Num, second_Num, n;
+
+            cout << "Please enter your first integer - ";
+            cin >> first_Num;
+            cout << endl;
+            cout << "Please enter your second integer - ";
+            cin >> second_Num;
+            cout << "Please enter your nth value - ";
+            cin >> n;
+
+            if(n == 1)
+            {
+                cout << "The nth Fibonacci number output is: " << first_Num << endl;
+            }
+            else if(n == 2)
+            {
+                cout << "The nth Fibonacci number output is: " << second_Num << endl;
+            }
+            else
+            {
+                int prev = first_Num;
+                int current = second_Num;
+                int next;
+                int counter = 3;
+
+                while(counter <= n)
+                {
+                    next = prev + current;
+                    prev = current;
+                    current = next;
+                    counter++;
+                }
+                cout << "The nth Fibonacci number output is: " << current << endl;
+            }
+
+            cout << "************************************************************************************"<< endl;
+        
         
    return 0;
 
