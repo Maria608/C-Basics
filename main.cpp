@@ -354,6 +354,29 @@ int main() {
             }
 
             cout << "************************************************************************************"<< endl;
+
+            string word;
+            char chara;
+            int counting = 0;
+            cout << "A program that will ask the user to input a word that is at least 5 characters in length. \nOnce a valid word has been input,"
+                 << "ask the user to input a character. \nThe program will then calculate the number of times this input character appears in the \n"
+                 << "word and output the result.";
+
+            cout << "Please enter any word of at least 5 characters in length- ";
+            cin >> word;
+            cout << endl;
+            cout << "Enter a character and the program shall show you how many times it appears in your word - ";
+            cin >> chara;
+
+            for(int i = 0; i < word.length(); i++)
+
+            {
+                if(word[i] == chara)
+                counting++;
+            }
+            cout << "The character " << chara << " has "<< counting << " number of occurrences." << endl;
+
+            cout << "************************************************************************************"<< endl;
         
         
    return 0;
