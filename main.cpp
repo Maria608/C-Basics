@@ -377,11 +377,27 @@ int main() {
             cout << "The character " << chara << " has "<< counting << " number of occurrences." << endl;
 
             cout << "************************************************************************************"<< endl;
-        
-        
-   return 0;
 
-}
+            cout << "Program that prompts the user to input the elapsed time for an event in seconds. The program then outputs"
+            "the elapsed time in hours, minutes, and seconds." << endl;
+
+            int total_seconds, leftover_seconds;
+            cout << "Please enter the elapsed time in seconds - ";
+            cin >> total_seconds;
+            cout << endl;
+            int hours = total_seconds/3600;
+            leftover_seconds = total_seconds%3600;
+            int minutes = leftover_seconds/60;
+            int seconds = leftover_seconds%60;
+
+            cout << "Your time is - " << hours << ":" << minutes << ":" << seconds << endl;
+
+            cout << "************************************************************************************"<< endl;
+        
+        
+           return 0;
+
+        }
 
     bool isVowel(char vowel)
     {
