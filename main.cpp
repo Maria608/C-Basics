@@ -45,7 +45,7 @@ int main() {
     cout << "static_cast<char>(56) = " << static_cast<char>(56) << endl;
     cout << "static_cast<int>('G') = " << static_cast<int>('G') << endl;
 
-  cout << "************************************************************************************"<< endl;
+    cout << "************************************************************************************"<< endl;
     const int GRAPES = 50;
     const double GRAP = 50.9;
     cout << "************************************************************************************"<< endl;
@@ -66,6 +66,8 @@ int main() {
     cin >> calcium;
     cout << endl;
     cout << "The values you entered are " <<"Name =" << halogen << " " << "Surname = " << hydrogen <<" "<< "Age = "<< calcium << endl;
+
+    cout << "************************************************************************************"<< endl;
   
     const double PI = 3.141592654;    
     int radius;
@@ -81,6 +83,7 @@ int main() {
     cout << "Enter any decimal number below" << endl;
     cin >> number5;
     cout << static_cast<int>(number5);
+
     cout << "************************************************************************************"<< endl;
 
     // Escape sequences
@@ -101,6 +104,23 @@ int main() {
     /*annit = annit + 54 can be as:*/
     annit += 54;
     cout << annit << endl;
+
+    cout << "************************************************************************************"<< endl;
+
+    // Input 
+    cout << "A milk carton can hold 3.78 liters of milk. Each morning, a dairy farm ships cartons of milk to a local grocery store. \n"
+         << "The cost of producing one liter of milk is $0.38, and the profit of each carton of milk is $0.27. \n"
+         << "The program that does the following: Prompts the user to enter the total amount of milk produced in the morning. \n"
+         << "Outputs the number of milk cartons needed to hold milk. (Round your answer to the nearest integer.) \n"
+         << "Outputs the cost of producing milk. Outputs the profit for producing milk.\n";
+
+    double  amount;
+    cout << "Enter the total amount of milk produced in the morning " ;
+    cin >> amount;
+    int  milkCartons = static_cast<int>(amount/ 3.78 + 0.5); // Added 0,5 to round to nearest integer
+    cout << "The number of milk cartons needed to hold milk is - " << milkCartons << endl;
+    cout << "The cost of producing milk is - $" << amount * 0.38 << endl;
+    cout << "The profit for producing milk is - $" << milkCartons * 0.27 << endl;
 
     cout << "************************************************************************************"<< endl;
 
