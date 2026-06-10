@@ -135,6 +135,8 @@ int main() {
          << feet * 30.48 << endl << "Inches in cm = "
          << inches *2.54 << endl;
     cout << endl;
+
+    cout << "************************************************************************************"<< endl;
     cout << "EXERCISE 2:" << endl;
 
     double deci_1, deci_2, deci_3, deci_4, deci_5;
@@ -189,6 +191,22 @@ int main() {
     cout << setw(34) << right << setfill('.') << "$" << setprecision(2) << fixed << 8235.00 << endl;
     cout << endl;
     cout << "_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_" << endl;
+
+    cout << "************************************************************************************"<< endl;
+
+      // Ticket prices:
+     cout << "_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_" << endl;
+     cout << "ticketPrice";
+     cout << setw(35) << setfill(' ') << "numberOfTicketsSold" << endl;
+     cout << 250 << setw(30) << 5750 << endl;
+     cout << 100 << setw(31) << 28000 << endl;
+     cout << 50 << setw(32) << 35750 << endl;
+     cout << 25 << setw(32) << 18750 << endl;
+     cout << "Total tickets sold: ";
+     cout << setprecision(2)<< fixed << setw(14)<< 5750+28000+35750+18750 << endl;
+     cout << "Total sale amount: ";
+     cout << setprecision(2)<< fixed << setw(17)<< (5750*250)+(28000*100)+(35750*50)+(18750*25) << endl;
+     cout << "_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_" << endl;
 
     cout << "************************************************************************************"<< endl;
 
